@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html >
+<head>
+<title>Login Form</title>
+<style>
+  body {
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #68BE4C;
+  }
+  .login-form {
+    width: 400px;
+    padding: 30px;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  .login-form input{
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: none;
+    background: #F2F2F2;
+    box-sizing: border-box;
+  }
+  .login-form button {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+  }
+  .login-form button:hover {
+    background-color: #45a049;
+  }
+  p{
+    color: #918383;
+    font-size: 13px;
+    text-align: center;
+}
+a{
+    color: #6CBF50;
+    text-decoration: none;
+}
+</style>
+</head>
+<body>
+
+<div class="login-form">
+<form action="">
+    <input type="text" id="username" name="username" placeholder="Username">
+    <input type="password" id="password" name="password" placeholder="Password">
+    <button type="button" onclick="login()">Login</button>
+    <p>Not registered? <a href="#">Create an account</a></p>
+   </form>
+</div>
+
+<script>
+  function login() {
+    var username = document.getElementById("username").value;
+    var password = document.getElementById("password").value;
+    console.log("Username: " + username);
+    console.log("Password: " + password);
+  }
+</script>
+
+</body>
+</html>
